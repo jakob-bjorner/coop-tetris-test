@@ -354,7 +354,7 @@
 
         // --- NETWORKING ---
 
-        const getRoomRef = (roomId) => doc(db, 'artifacts', appId, 'public', 'data', `room_${roomId}`);
+        const getRoomRef = (roomId) => doc(db, 'artifacts', appId, 'public', 'data', 'rooms',`${roomId}`);
 
         async function createGame() {
             if (!auth.currentUser) return;
