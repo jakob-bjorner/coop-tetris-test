@@ -234,7 +234,7 @@
         ];
 
         // --- APP STATE ---
-        const __firebase_config = {
+        const firebaseConfig = {
           apiKey: "AIzaSyAVa3bnJS9GtaKd29TDXlIOY92CIZtLhI0",
           authDomain: "cooptetris.firebaseapp.com",
           projectId: "cooptetris",
@@ -242,7 +242,7 @@
           messagingSenderId: "1075348452046",
           appId: "1:1075348452046:web:8791cd5396f35d39e6169f"
         };
-        const firebaseConfig = JSON.parse(__firebase_config);
+        // const firebaseConfig = JSON.parse(__firebase_config);
         const firebaseApp = initializeApp(firebaseConfig);
         const auth = getAuth(firebaseApp);
         const db = getFirestore(firebaseApp);
